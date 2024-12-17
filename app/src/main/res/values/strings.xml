@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started">Get Started</string>
+    <string name="address">Address</string>
+    <string name="birthday">Birthday</string>
+    <string name="age">Age</string>
+    <string name="name">Name</string>
+    <string name="upload_your_profile_picture_here">Upload your</string>
+    <string name="upload">Upload</string>
+    <string name="please_fill_up">Please Fill up some fields first</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="done">Done</string>
+    <string name="love_and_relationship">Love and</string>
+    <string name="relationship">Relationship</string>
+    <string name="fun_and_random">Fun and Random</string>
+    <string name="my_hobbies">My Hobbies</string>
+    <string name="about_me">About Me</string>
+    <string name="my_slambook">My Slambook</string>
+    <string name="well_done">WELL DONE</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>LGBTQ</item>
+    </string-array>
+    <string-array name="day_option">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <integer name="January">0</integer>
+    <integer name="February">1</integer>
+    <integer name="March">2</integer>
+    <integer name="April">3</integer>
+    <integer name="May">4</integer>
+    <integer name="June">5</integer>
+    <integer name="July">6</integer>
+    <integer name="August">7</integer>
+    <integer name="September">8</integer>
+    <integer name="October">9</integer>
+    <integer name="November">10</integer>
+    <integer name="December">11</integer>
+
+    <string name="personal">Your Personal Slambook were you can add your personal information about your salf</string>
+    <string name="friends">Your collection of Slambook about your Friends</string>
+    <string name="edit">Edit</string>
+    <string name="profile_image">profile image</string>
+    <string name="third_answer">Third Answer</string>
+    <string name="second_answer">Second Answer</string>
+    <string name="first_answer">First Answer</string>
+    <string name="live_without">What are three things you cannot live without?</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="motto_in_life">What is your favorite quote or motto in life?</string>
+    <string name="hidden_talents">Do you have any hidden talents? If yes, what are they?</string>
+    <string name="what_motivates_you">What motivates you to wake up every day?</string>
+    <string name="what_is_your_biggest_dream_in_life">What is your biggest dream in life?</string>
+    <string name="describe_your_personality">How would you describe your personality in three words?</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="save">Save</string>
+    <string name="travel_destination">What is your dream adventure or travel destination?</string>
+    <string name="movies">Do you enjoy watching movies or TV shows? Which one is your favorite?</string>
+    <string name="proud_of">Have you ever created something you\'re proud of? (e.g., art, crafts)</string>
+    <string name="cook_bake">Do you like to cook or bake? If so, what’s your specialty?</string>
+    <string name="music">What type of music do you enjoy listening to?</string>
+    <string name="enjoy_reading">Do you enjoy reading? If yes, what’s your favorite book?</string>
+    <string name="new_hobby">What is a new hobby you’ve recently tried or want to try?</string>
+    <string name="skill">If you could master any skill, what would it be?</string>
+    <string name="indoor">Do you prefer indoor or outdoor activities?</string>
+    <string name="what_is_your_favorite_hobby">What is your favorite Hobby?</string>
+    <string name="data_updated">Data Updated</string>
+    <string name="love_and_relationship1">Love and Relationship</string>
+    <string name="what_does_love_mean_to_you">What does love mean to you?</string>
+    <string name="ove_or_in_a_relationship">Are you currently in love or in a relationship?</string>
+    <string name="what_s_your_idea_of_a_perfect_date">What’s your idea of a perfect date?</string>
+    <string name="qualities">What qualities do you value most in a partner?</string>
+    <string name="show">How do you show someone that you love them?</string>
+    <string name="soulmates">Do you believe in soulmates? Why or why not?</string>
+    <string name="sweetest">What’s the sweetest thing someone has done for you?</string>
+    <string name="conflicts">How do you handle conflicts in a relationship?</string>
+    <string name="lesson">What’s the most important lesson you’ve learned about love?</string>
+    <string name="advice">If you could give one piece of advice about love, what would it be?</string>
+    <string name="bio">Bio</string>
+    <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="profile_picture_here">Profile Picture here.</string>
+    <string name="gender">Gender:</string>
+    <string name="nickname">Nickname:</string>
+    <string name="what_is_your_biggest_dream">What is your biggest dream?</string>
+    <string name="what_song_would_describe_your_current_mood">What song would describe your current mood?</string>
+    <string name="what_motivates_you_the_most">What motivates you the most?</string>
+    <string name="what_s_your_favorite_quote_or_motto">What’s your favorite quote or motto?</string>
+    <string name="what_are_three_things_you_can_t_live_without">What are three things you can’t live without?</string>
+    <string name="who_is_your_celebrity_crush">Who is your celebrity crush?</string>
+    <string name="what_s_your_hidden_talent">What’s your hidden talent?</string>
+    <string name="what_s_your_favorite_memory_with_me">What’s your favorite memory with me?</string>
+    <string name="what_s_your_favorite_movie_or_tv_show">What’s your favorite movie or TV show?</string>
+    <string name="back">Back</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="full_name">Full Name</string>
+    <string name="tap_to_edit_friend_slambook">Tap to Edit Friend Slambook</string>
+    <string name="slambook_q">SLAMBOOK Q</string>
+</resources>

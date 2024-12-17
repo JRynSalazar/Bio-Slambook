@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghome"
+    tools:context=".EditFriendDetails">
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/back"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="90dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProf"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/defprof"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/uploadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/upload"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/cardProf"
+                app:layout_constraintStart_toEndOf="@+id/cardProf"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/upload_your_profile_picture_here"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/cardProf"
+                app:layout_constraintTop_toTopOf="@+id/cardProf" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/profile_picture_here"
+                android:textColor="@color/black"
+
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/cardProf"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardProf"
+                tools:ignore="Autofill">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/warningName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_warning20x20"
+                android:layout_marginEnd="15dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/admin_user"
+                app:layout_constraintEnd_toEndOf="@+id/admin_user"
+                app:layout_constraintTop_toTopOf="@+id/admin_user" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/birthday"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/admin_user" />
+
+            <Spinner
+                android:id="@+id/customSpinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:autofillHints="Month"
+                android:spinnerMode="dropdown"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Spinner
+                android:id="@+id/day"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/day_option"
+                android:hint="@string/day"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/customSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/customSpinner" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:hint="@string/year"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:maxLength="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/day"
+                app:layout_constraintTop_toTopOf="@+id/day" />
+
+            <ImageView
+                android:id="@+id/warningYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_warning20x20"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/year"
+                app:layout_constraintEnd_toEndOf="@+id/year"
+                app:layout_constraintTop_toTopOf="@+id/year" />
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="@string/slambook_q"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/day" />
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/nickname"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/question1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/no1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/no1"
+                app:layout_constraintTop_toTopOf="@+id/no1" />
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_is_your_biggest_dream"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/no1" />
+
+            <EditText
+                android:id="@+id/question2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no2"
+                app:layout_constraintTop_toBottomOf="@+id/no2" />
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_song_would_describe_your_current_mood"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+            <EditText
+                android:id="@+id/question3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no3"
+                app:layout_constraintTop_toBottomOf="@+id/no3" />
+
+            <TextView
+                android:id="@+id/no4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/what_motivates_you_the_most"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question3" />
+
+            <EditText
+                android:id="@+id/question4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no4"
+                app:layout_constraintTop_toBottomOf="@+id/no4" />
+
+            <TextView
+                android:id="@+id/no5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_s_your_hidden_talent"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question4" />
+
+            <EditText
+                android:id="@+id/question5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no5"
+                app:layout_constraintTop_toBottomOf="@+id/no5" />
+
+            <TextView
+                android:id="@+id/no6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_s_your_favorite_quote_or_motto"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question5" />
+
+            <EditText
+                android:id="@+id/question6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no6"
+                app:layout_constraintTop_toBottomOf="@+id/no6" />
+
+            <TextView
+                android:id="@+id/no7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/what_are_three_things_you_can_t_live_without"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question6" />
+
+            <EditText
+                android:id="@+id/question7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no7"
+                app:layout_constraintTop_toBottomOf="@+id/no7" />
+
+            <TextView
+                android:id="@+id/no8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/who_is_your_celebrity_crush"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question7" />
+
+            <EditText
+                android:id="@+id/question8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
+                android:autofillHints=""
+                android:hint="@string/your_answer"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no8"
+                app:layout_constraintTop_toBottomOf="@+id/no8"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
